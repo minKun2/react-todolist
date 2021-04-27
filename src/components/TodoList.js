@@ -1,6 +1,8 @@
 import React from "react";
+import { MdFiberPin } from "react-icons/md";
 import styled from "styled-components";
 import TodoItem from "./TodoItem";
+import { useTodoState } from "../TodoContext";
 
 const TodoListBlock = styled.div`
   flex: 1;
@@ -10,12 +12,18 @@ const TodoListBlock = styled.div`
 `;
 
 function TodoList() {
+  const todosd = useTodoState();
+
   return (
     <TodoListBlock>
-      <TodoItem text="프로젝트 생성하기" done={true} />
-      <TodoItem text="컴포넌트 스타일링하기" done={true} />
-      <TodoItem text="Context 만들기" done={false} />
-      <TodoItem text="기능 구현하기" done={false} />
+      {todosd.map((todo) => (
+        <TodoItem
+          key={todo.id}
+          id={todo.id}
+          text={todo.text}
+          done={todo.done}
+        />
+      ))}
     </TodoListBlock>
   );
 }
