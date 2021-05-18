@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 import React from "react";
 import { createGlobalStyle } from "styled-components";
+import TodoTemplate from "./components/TodoTemplate";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div>안녕하세요. todolist입니다.</div>
+      <TodoTemplate>안녕하세요. todolist입니다.</TodoTemplate>
     </>
   );
 }
+
+export default App;
