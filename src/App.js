@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 
@@ -15,5 +16,3 @@ function App() {
     </>
   );
 }
-
-export default App;
