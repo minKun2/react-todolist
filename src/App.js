@@ -28,7 +28,6 @@
 // export default App;
 
 import React from "react";
-import Users from "./Users";
 import Info from "./info";
 
 const App = () => {
