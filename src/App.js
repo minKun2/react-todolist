@@ -29,9 +29,10 @@
 
 import React from "react";
 import Users from "./Users";
+import Info from "./info";
 
 const App = () => {
-  return <Users />;
+  return <Info />;
 };
 
 export default App;
