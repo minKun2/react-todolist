@@ -28,10 +28,10 @@
 // export default App;
 
 import React from "react";
-import Info from "./info";
+import Users from "./Users";
 
 const App = () => {
-  return <Info />;
+  return <Users />;
 };
 
 export default App;
